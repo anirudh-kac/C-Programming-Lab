@@ -4,7 +4,7 @@ int bintodec(int binarynum)
 {
     if(!(binarynum/10))
         return(binarynum);
-    return (binarynum%10 + bintodec((binarynum/10) *2));
+    return (binarynum%10 + bintodec(binarynum/10) *2);
 }
 
 int main()
